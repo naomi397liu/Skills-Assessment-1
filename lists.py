@@ -70,7 +70,9 @@ def every_other_item(items):
        ['a', True, 0]
     """
 
-    return ['the wrong thing']
+    return items[0::2]
+
+print(every_other_item(['a', 400, True, 'b', 0]))
 
 
 def smallest_n_items(items, n):
