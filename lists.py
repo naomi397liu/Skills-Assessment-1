@@ -54,10 +54,11 @@ def words_in_common(words1, words2):
         for word2 in words2:
             if word1 == word2:
                 words_in_common.append(word1) #creates new list of common words
-    remove repeats
-    
-
-print(words_in_common(['Python', 'Python', 'Python'], ['Lizard', 'Turtle', 'Python']))
+    #remove repeats
+    for word in words_in_common:
+        while words_in_common.count(word) > 1: #find repeat
+            words_in_common.remove(word)                       #remove repeated until there are none
+    return words_in_common
 
 
 def every_other_item(items):
