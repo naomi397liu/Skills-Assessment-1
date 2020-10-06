@@ -27,38 +27,37 @@ def print_indices(items):
 
 def words_in_common(words1, words2):
     """Return words that are shared between `words1` and `words2`.
-
     The returned words are sorted alphabetically.
-
     NOTE: For this problem, feel free to use other data structures we've
     learned about in this class.
-
     For example:
-
         >>> words_in_common(
         ...     ['Python', 'Python', 'Python'],
         ...     ['Lizard', 'Turtle', 'Python']
         ... )
         ['Python']
-
     The returned list should not have any duplicates:
-
         >>> words_in_common(
         ...     ['cheese', 'cheese', 'cheese', 'cake'],
         ...     ['cheese', 'hummus', 'beets', 'cake']
         ... )
         ['cake', 'cheese']
-
     If there are no words in common, return an empty list:
-
         >>> words_in_common(
         ...     ['lamb', 'chili', 'cheese'],
         ...     ['cake', 'ice cream']
         ... )
         []
     """
+    words_in_common = []
+    for word1 in words1:
+        for word2 in words2:
+            if word1 == word2:
+                words_in_common.append(word1) #creates new list of common words
+    remove repeats
+    
 
-    return ['the wrong thing']
+print(words_in_common(['Python', 'Python', 'Python'], ['Lizard', 'Turtle', 'Python']))
 
 
 def every_other_item(items):
