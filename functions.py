@@ -126,7 +126,13 @@ Arguments:
 Return:
     - Shipping cost (int)
 """
-
+def find_shipping_cost(item_ship):
+    if is_berry(item_ship):
+        cost = 0
+    else:
+        cost = 5
+    return cost
+print(find_shipping_cost('durian'))
 # Write your function here
 
 
