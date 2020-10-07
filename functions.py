@@ -27,7 +27,7 @@ def is_correct_town(town):
     
     return town.lower() == my_town.lower()
     
-print(is_correct_town('San Fran'))
+print(is_correct_town('Oakland'))
 
 """PROMPT 2
 
@@ -44,6 +44,11 @@ Return:
 """
 
 # Write your function here
+def get_full_name(first, last):
+    full_name = first + ' ' + last
+    return full_name
+    
+print(get_full_name('Naomi', 'Liu'))
 
 
 """PROMPT 3
