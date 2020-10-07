@@ -126,7 +126,7 @@ Arguments:
 Return:
     - Shipping cost (int)
 """
-def find_shipping_cost(item_ship): #I like durian 
+def find_shipping_cost(item_ship):
     if is_berry(item_ship):
         cost = 0
     else:
@@ -161,6 +161,21 @@ Arguments:
 Return:
     - Total price after taxes and fees (float)
 """
+def find_total_cost(price, state, tax = 0.05):
+    state = state.upper()
+    if state == 'CA':
+        tax_additional = 0.03 * (price)
+    elif state == 'PA':
+        tax_additional = 2.00
+    elif state == 'MA':
+        if price <= 100.00:
+            tax_additional = 1.00
+        elif price > 100.00:
+            tax_additional = 3.00
+    return (price + price * tax + tax_additional)
+
+print(find_total_cost(10.50,'CA'))
+    
 
 # Write your function here
 
