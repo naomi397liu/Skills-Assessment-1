@@ -102,6 +102,14 @@ Arguments:
 Return:
     - True or False (bool)
 """
+def is_berry(fruit):
+    berries = set(['strawberry', 'raspberry', 'blackberry', 'currant'])
+    if fruit in berries:
+        return True
+    else:
+        return False
+
+print(is_berry('currant'))
 
 # Write your function here
 
