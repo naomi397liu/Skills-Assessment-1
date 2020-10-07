@@ -22,7 +22,12 @@ Return:
 """
 
 # Write your function here
-
+def is_correct_town(town):
+    my_town = 'Half Moon Bay'
+    
+    return town.lower() == my_town.lower()
+    
+print(is_correct_town('San Fran'))
 
 """PROMPT 2
 

@@ -77,23 +77,25 @@ print(every_other_item(['a', 400, True, 'b', 0]))
 
 def smallest_n_items(items, n):
     """Return the `n` smallest integers in list in descending order.
-
     You can assume that `n` will be less than the length of the list.
-
     For example:
-
         >>> smallest_n_items([2, 6006, 700, 42, 6, 59], 3)
         [42, 6, 2]
-
     If `n` is 0, return an empty list:
-
         >>> smallest_n_items([3, 4, 5], 0)
         []
-
     Duplicates are OK:
-
         >>> smallest_n_items([1, 1, 1, 1, 1, 1], 2)
         [1, 1]
     """
+    smallest_list = []
+    i = 0              #min() arg is empty, which means there is an issue with min taking in items
+    while i < n:
+        smallest = min(items)
+        items.remove(smallest)
+        smallest_list.append(smallest)
+        i += 1
+        
+    return sorted(smallest_list)
 
-    return []
+print(smallest_n_items([1,9,4,7,8], 2))
