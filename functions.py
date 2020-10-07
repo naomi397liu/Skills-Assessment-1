@@ -47,7 +47,7 @@ Return:
 def get_full_name(first, last):
     full_name = first + ' ' + last
     return full_name
-    
+
 print(get_full_name('Naomi', 'Liu'))
 
 
@@ -72,9 +72,15 @@ Arguments:
     - Last name (str)
     - Hometown (str)
 """
-
+def greet(first, last, town):
+    
+    if is_correct_town(town) == True:
+        print(f'''Hi {get_full_name(first, last)}, we're from the same place!''')
+    else:
+        print(f"Hi {get_full_name(first, last)}, I'd like to visit {town}! ")
+    return None
 # Write your function here
-
+greet('Naomi','Liu', 'Half Moon bay')
 
 """PROMPT 4
 
