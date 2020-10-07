@@ -126,7 +126,7 @@ Arguments:
 Return:
     - Shipping cost (int)
 """
-def find_shipping_cost(item_ship):
+def find_shipping_cost(item_ship): #I like durian 
     if is_berry(item_ship):
         cost = 0
     else:
