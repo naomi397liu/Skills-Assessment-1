@@ -181,7 +181,7 @@ print(find_total_cost(10.50,'CA'))
 
 
 """PROMPT 7
-
+#CRUNCH TIME SKIPPPPPPPP
 Write a function that takes in a list and *any* number of additional arguments.
 The function should add all those items to the end of the  list and return
 the list.
@@ -202,7 +202,7 @@ Return:
 
 
 """PROMPT 8
-
+#CRUNCH TIME SKIPPPPPPPP
 Write a function that takes in a word and returns a tuple. You'll do this in an
 interesting way though, so make sure you read these directions thoroughly.
 
